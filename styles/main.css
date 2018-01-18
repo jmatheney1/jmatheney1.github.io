@@ -1,0 +1,44 @@
+/* CIT 230 - Assignment Portal CSS Template */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 18px; 
+    line-height: 30px;
+    font-family: Ubuntu, sans-serif;
+    background-color: #09441d;
+    color: #ff6a14;
+}
+
+h1 {
+    font-size: 2.xrem;
+    color: #ff6a14;
+}
+
+h2 {
+    font-size: 1.5.xrem;
+    text-align: center;
+    border-bottom: 2px solid #bbb;
+}
+
+header, main, footer  {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 400px;
+    
+}
+
+header, footer, a {
+    text-align: center;
+    background-color: #09441d;
+    color: whitesmoke;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+    float: center;
+}
+
+footer {
+    font-size: 12px;
+}
