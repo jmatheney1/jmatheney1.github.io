@@ -1,0 +1,74 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  nav ul {
+        list-style-type: none;
+        white-space: nowrap;
+        }
+    nav ul li {
+        display: inline-block;
+        border-bottom: none; 
+        border-right: 1px solid white;
+        }
+    nav li:last-child {border-right: none;}
+    
+    main {}
+    main h2 {}
+    main figure {}
+    main figure img {
+        width: 100%;
+        max-width: 600px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+    
+    section{
+        column-count: 3;
+        width: 100%;
+        max-width: 600px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+    div.highlow {
+    }
+    div.current {
+        max-width: 150px;
+        }
+    div.current img {
+        max-width: 150px;
+        }
+    div.conditions {}
+
+    section.forecast {
+        column-count: 1;
+        display: table;
+        width: 100%;
+        padding: 0 10px 20px;
+        max-width: 800px;
+        text-align: center;
+        clear:both; 
+        }
+    
+    table {
+        width: 100%;
+        padding: px;
+        border: 1px solid black;
+        }
+    th, td {
+        padding: 5px;
+        border: 1px solid black;
+        }
+    
+    article {
+        clear: both;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    article p.town-article img {
+        width: 50%; 
+        float:right;
+        }  /* responsive images */
+
+}
