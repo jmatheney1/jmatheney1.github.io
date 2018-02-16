@@ -17,6 +17,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     width: 100%;
     margin-left:auto;
     margin-right:auto;
+    margin: 0;
     }
 
 header {   

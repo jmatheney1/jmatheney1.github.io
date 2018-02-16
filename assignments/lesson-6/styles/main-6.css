@@ -1,6 +1,4 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}
 
 body {
     font-size: 16px;
@@ -8,98 +6,117 @@ body {
     font-weight: 400;
     text-align: center;
     background-color: white;
-    
+    margin: 0;
     }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header, nav, main, footer {
     height: auto;
     width: 100%;
+    margin: 0;
     margin-left:auto;
     margin-right:auto;
+
     }
 
 header {   
-    background-image: url(/assignments/lesson-6/images/vegies6.jpeg);
+    background-image: url(/assignments/lesson-6/images/vegies6.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
-    color: #a45c44;
-    }
-header h1 {
-    font-size: 3em;
-    }
-header. imgage {}
-header .subheading {
-    font-size: 1.8em;
-    }
+    color: orangered;
+}
 
-nav { display: block}
-nav button {display: none;}
+header h1 {
+    margin: 0;
+    padding: .3em;
+    font-size: 4em;
+}
+
+header .subheading {
+    font-size: 3em;
+}
+
+nav { 
+    display: block;
+    max-width: 45em;
+}
+
+nav button {
+    margin: .2rem 2%;
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+}
+
 nav ul {
     list-style-type: none;
     margin: 1;
     padding: 0;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: .5em;
     background-color: #157A6E;
-    
-    }
+}
+
 nav ul li {
     text-align: center;
     border-bottom: 1px solid white;
-    }
-nav ul li a {    
+}
+
+nav ul li a {  
     display: block;
     color: white;
-    padding: 8px 10px 8px 10px;
+    padding: .8rem 2%;
     text-decoration: none;
-    font-size: 19px;
-    }
+    font-size: 1.2rem;    
+}
+
 nav li:last-child {border-bottom: none;}
-nav ul li.active a {background-color: #228E2E;}
+
 nav ul li a:hover {background-color: #228E2E;}
 
-main {}
-main h2 {}
-main figure {}
-main figure img {
-    width: 100%;
-    max-width: 400px;
-    }
+nav ul li.active a {background-color: #228E2E;}
 
-section {
-    clear: both;
+nav ul.hide {
+    display: none;
+}
+
+main figure {margin: 0 0 0 2%;}
+
+main figure.franklin img {
+    width: 100%;
+}
+section.weather {
     width: 100%;
     }
-div.highlow {}
 div.current {
     margin-left:auto;
     margin-right:auto;
     max-width: 110px;
-    }
-div.current img {
-    max-width: 110px;
-    }
-div.conditions {}
+}
+
+div.current img {max-width: 110px;}
+
 section.forecast {
     display: none;
-    }
+}
 
-article {
-    overflow: auto;
-    }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 96%; /* fill the page in the small/phone view */
+article {overflow: auto;}
+
+article p.town-article img {
+  width: 96%;
   margin: 0 5px 20px 5px;
-    }
+}
+
 footer {
     background-color: #157A6E;
     color: white;
     font-size: 14px;
-    }
-footer aside {}
-footer>p {}    
- /* This structure refers to p elements that are direct children of the footer element */
+}
 
-/* Other Class Selectors */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
