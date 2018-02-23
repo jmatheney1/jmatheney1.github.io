@@ -1,101 +1,96 @@
 * { box-sizing: border-box;}
 
-    body {
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        text-align: center;
-        background-color: white;
-        margin: 0;
-        }
-
-    header, nav, footer {
-        height: auto;
-        width: 100%;
-
-        }
-
-    header { 
-        display: flex;
-        flex-direction: column;
-        color: orangered;
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: white;
+    margin: 0;
     }
 
-    header .logo{
-        margin: 0;
-        padding: .3em;
+header, nav, footer {
+    height: auto;
+    width: 100%;
     }
 
-    header h1 {
-        padding: 0;
-        font-size: 3em;
-    }
+header { 
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+}
 
-    nav button {
-        display: block;
-        background-color: transparent;
-        border: none;
-        font-size: 1.8rem;
-        color: #555;
-    }
+header .logo{
+    margin: 0;
+    padding: .3em;
+}
 
-    nav ul {
-        margin: 15px 0 15px;
-        list-style-type: none;
-        padding: 0;
-        background-color: #157A6E;
-        overflow: hidden;
-    }
+header h1 {
+    padding: 0;
+    font-size: 3em;
+}
 
-    nav ul { 
-        display: flex;
-        flex-direction: column;
-    }
+nav button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+nav ul {
+    margin: 15px 0 15px;
+    list-style-type: none;
+    padding: 0;
+    background-color: #157A6E;
+    overflow: hidden;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: column;
+}
     
-    nav li {
-        flex: 100%;
-        border-bottom: 1px solid white;
-    }
+nav li {
+    flex: 100%;
+    border-bottom: 1px solid white;
+}
 
-    nav ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 10px;
-        text-decoration: none;
-    }
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
 
-    nav li:last-child {border-bottom: none;}
+nav li:last-child {border-bottom: none;}
+nav ul li a:hover:not(.active) {background-color: #228E2E;}
+nav ul li.active a {background-color: #228E2E;}
+nav ul.hide {display: none;}
 
-    nav ul li a:hover:not(.active) {background-color: #228E2E;}
+footer {
+    background-color: #157A6E;
+    color: white;
+    font-size: 14px;
+}
 
-    nav ul li.active a {background-color: #228E2E;}
+main .grid {
+    padding: 0 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
 
-    nav ul.hide {display: none;}
+main .grid, div, img{
+    border-radius: 10px;
+    max-width: 100%;
+}
 
-    footer {
-        background-color: #157A6E;
-        color: white;
-        font-size: 14px;
-    }
-
-    main .grid {
-        padding: 0 15px 15px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
-    main .grid, div, img{
-        border-radius: 10px;
-        max-width: 100%;
-
-    }
-
-    figcaption {
-        padding: 0 5px 5px;
-    }
+figcaption {
+    padding: 0 5px 5px;
+}
 
 .clearfix:after {
     content: "";
@@ -103,40 +98,36 @@
     clear: both;
 }
 
-
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
-    header {
-        display: flex;
-        flex-direction: row;  
+header {
+    display: flex;
+    flex-direction: row;
     }
+
+nav button { display:none;}    
+nav ul.hide{display: flex;}
     
-    nav button { display:none;}
+nav ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    white-space: nowrap;
+    justify-content: space-between;
+}
     
-    nav ul.hide{display: flex;}
+nav ul li {
+    border-bottom: none; 
+    border-right: 1px solid white;
+}
     
-    nav ul {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        list-style-type: none;
-        white-space: nowrap;
-        justify-content: space-between;
-    }
-    
-    nav ul li {
-        border-bottom: none; 
-        border-right: 1px solid white;
-    }
-    
-    nav ul li a {padding: 6px;}
-    
-    nav li:last-child {border-right: none;}
+nav ul li a {padding: 6px;}
+nav li:last-child {border-right: none;}
 
 main .grid {grid-template-columns:1fr 1fr;}
 
    
-    
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 nav ul li a {padding: 4px;}

@@ -1,14 +1,10 @@
 @media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-      main figure img {
-        }
     
-    section{
-        width: 50%;
-        max-width: 900px;
+section{
+    width: 50%;
+    max-width: 1100px;
+}  
 
-        }  
-  article p.town-article img { width: 50%;
-    }
-  
+article p.town-article img { width: 50%;}
+    
 }
