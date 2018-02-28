@@ -10,7 +10,7 @@ body {padding: 100px;
 table {
     box-shadow: 5px 10px 20px gray;
     width:auto;}
-tfoot {font-size: .7em;}
+tfoot { font-size: .7em;}
 thead { font-size: 1.5em;}
 
 tbody {}
