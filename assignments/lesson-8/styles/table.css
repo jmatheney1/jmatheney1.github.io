@@ -1,11 +1,17 @@
 * { box-sizing: border-box;}
-body {
+body {padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     }
 
-table {width:auto;}
+table {
+    box-shadow: 5px 10px 20px gray;
+    width:auto;}
 thead { font-size: 1.5em;}
+tfoot {font-size: .7em;}
 tbody {}
 
 table, th, td {
@@ -33,9 +39,7 @@ th {
     color:  black;
 }
 
-td.over {
+tr:nth-child(5) td:nth-child(3) {
     background-color: #628ca6;
-    color: white;}
-
-tfoot tr:nth-child(8){font-size: .7em; font-weight: normal;
+    color: white;
 }
