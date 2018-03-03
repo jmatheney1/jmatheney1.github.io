@@ -78,9 +78,7 @@ footer {
     font-size: 14px;
 }
 
-form {
-    margin: 1em 3%;
-}
+form {margin: 1em 3%;}
 
 fieldset {
     background-color: #f2eee7;
@@ -143,15 +141,14 @@ input.submitBtn {
     grid-gap: 20px;
 }
 
-.grid, div, img{
-    border-radius: 220px;
-}
+.grid div img{border-radius: 220px;}
 
 p {
     margin: 0;
     padding: 0 5px 5px;
     font-size: 1em;
 }
+
 .clearfix:after {
     content: "";
     display: table;
@@ -162,9 +159,7 @@ main {
     display: flex;
     flex-direction: row;
     align-content: space-between;    
-    
 }
-
 
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
@@ -203,28 +198,23 @@ legend {
     font-size: 1.4em;
     margin: 2% 0 0;
 }
+    
 .grid {
     display: flex;
     flex-direction: column;
-    
 }
-main img {
+main div img {
     margin: 50px 0 0;
     min-width: 300px;
     max-width: 100%;
     height: auto;
     box-shadow: 4px 4px 10px #666;
 }    
-
-   
+}
+    
 @media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
 nav ul li a {padding: 4px;}
 
-label span {
-        font-size: 1.3em;
-}
-  
-/*.grid div {
-    border-radius: 20px;
-}*/
+label span {font-size: 1.3em;}
+    }
