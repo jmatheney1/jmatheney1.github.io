@@ -120,7 +120,11 @@ label span {
     margin: 0;
     font-size: 1.5em;   
 }
-
+.danger {
+    font-size: 1em;
+    margin: .5em 0;
+    padding-top: .7em;
+}
 input.submitBtn {
     -webkit-appearance: none;
     color: #fff;
@@ -196,7 +200,8 @@ form {
     margin: 0 5px 0;
     width: 90%;}
 
-label span {font-size: 1.1em;}
+label span, .danger {font-size: 1.1em;}
+
 
 legend { 
     font-size: 1.4em;
@@ -221,5 +226,5 @@ main div img {
 header h1 {font-size: 3.5em;}
 .subheading {font-size: 2em;}
 nav ul li a {padding: 4px;}
-label span {font-size: 1.3em;}
+label span, .danger {font-size: 1.3em;}
     }
