@@ -1,0 +1,122 @@
+* { box-sizing: border-box;}
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    }
+
+header, nav, main, footer {
+    height: auto;
+    width: 100%;
+    }
+
+header { 
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/assignments/lesson-8/images/vegies6.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    color: orangered;
+}
+
+header .logo{
+    margin: 0;
+    padding: .3em;
+}
+
+header h1 {
+    font-size: 2em;
+    padding: .3em;
+    border: #a45c44 solid 1px;
+    background-color: #d8dad3;
+    border-radius: .4em;
+    height: 50%;
+}
+
+.subheading {
+    font-size: 1em;
+    padding: .3em;
+    border: #a45c44 solid 1px;
+    background-color: #d8dad3;
+    border-radius: .4em;
+}
+
+nav button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+nav ul {
+    margin: 15px 0 15px;
+    list-style-type: none;
+    padding: 0;
+    background-color: #157A6E;
+    overflow: hidden;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    flex:100%;
+    border-bottom: 1px solid white;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li:last-child {border-bottom: none;}
+nav ul li a:hover {background-color: #228E2E;}
+nav ul li.active a {background-color: #228E2E;}
+nav ul.hide {display: none;}
+
+main figure {margin: 0 0 0 2%;}
+main figure.franklin img {width: 100%;}
+
+section.weather {width: 100%;}
+
+div.current {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 110px;
+}
+
+div.current img {max-width: 110px;}
+
+section.forecast {display: none;}
+
+article {overflow: auto;}
+
+article p.town-article img {
+  width: 96%;
+  margin: 0 5px 20px 5px;
+}
+
+footer {
+    background-color: #157A6E;
+    color: white;
+    font-size: 14px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

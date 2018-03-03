@@ -1,0 +1,16 @@
+@media only screen and (min-width: 64em) {
+
+header {flex-direction: row;}
+
+header h1 {font-size: 3em;}    
+
+.subheading {font-size: 1.2em;}
+    
+section{
+    width: 50%;
+    max-width: 1100px;
+}  
+
+article p.town-article img { width: 50%;}
+    
+}

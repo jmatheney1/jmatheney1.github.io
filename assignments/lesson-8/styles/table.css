@@ -5,14 +5,15 @@ body {padding: 100px;
     align-content: center;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    font-weight: 400;
     }
 
 table {
     box-shadow: 5px 10px 20px gray;
-    width:auto;}
+    width:auto;
+}
 tfoot { font-size: .7em;}
 thead { font-size: 1.5em;}
-
 tbody {}
 
 table, th, td {
@@ -31,7 +32,7 @@ tr:nth-child(odd) {background-color:#e7f0ed;}
 tr:nth-child(1) {
     background-color: #628ca6;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.1em
 }
 
