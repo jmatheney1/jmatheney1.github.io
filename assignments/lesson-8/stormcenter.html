@@ -18,7 +18,7 @@
         <img src="images/logo6.png" alt="The site logo">
       </figure>
         <h1>Franklin Garden Weather</h1>
-        <h2><div class="subheading">Grow in Any Weather!</div></h2>
+        <h2 class="subheading">Grow in Any Weather!</h2>
   </header>
 
   <nav class="clearfix">
@@ -33,7 +33,7 @@
     </ul>		
   </nav>
 <main>
-<form target="_blank" action="" method="get" enctype="multipart/form-data" name="storm" id="storm">
+<form action="none" method="get" enctype="multipart/form-data" name="storm" id="storm">
     <fieldset>
         <legend><span>User Info</span>
         </legend>
@@ -58,13 +58,13 @@
             <input name="date" type="date">
         </label>
         <label><span>Type:</span>
-            <input list="storms" name="stormType" size="28">
+            <input list="storms" name="stormType" size="16">
             <datalist id="storms">
-                <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
             </datalist>
         </label>
         <label class="srange"><span>Severity (1-10):</span> 
@@ -72,22 +72,25 @@
             <span class="srangev" id="severityRange">1 </span>
         </label>
         <label><span>Region:</span>
-            <input type="select" name="stormRegion" size="28" list="region" placeholder="Select Region...">
-            <datalist id="region" >
-                <option value="Select Region..." disabled></option>
-                <option value="Franklin"></option>
-                <option value="Greenville"></option>
-                <option value="Springfield"></option>
-            </datalist>
+            <select id="region" name="stormRegion" style="width: 170px;">
+                <optgroup label="select Region..." disabled></optgroup>
+                <option value="Franklin">Frankin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </select>
         </label>
     </fieldset>    
 
     <fieldset>
         <legend><span>Other</span></legend>
-        <label for="q1"><span>UserIn-Danger Level:</span><br>
-            <input type="radio" name="q1" value="yes"> Yes<br>
-            <input type="radio" name="q1" value="no"> No<br>
-            <input type="radio" name="q1" value="maybe"> Mayme<br>
+        <label ><span>User In-Danger?</span><br>
+            <label for="opt1" class="radio">
+                <input id="opt1" type="radio" name="q1" value="yes"> 
+                Yes</label><br>
+            <label for="opt2" class="radio">
+                <input id="opt2" type="radio" name="q1" value="no" checked> No</label><br>
+            <label for="opt3" class="radio">
+                <input id="opt3" type="radio" name="q1" value="maybe"> Maybe</label><br>
         </label>
         <label class="tarea-comment"><span>Addtional Info or Comments</span>
             <textarea name="message" cols="30" rows="10" placeholder="Type Here"></textarea>
