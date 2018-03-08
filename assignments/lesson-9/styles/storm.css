@@ -1,0 +1,228 @@
+* { box-sizing: border-box;}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    margin: 0;
+    }
+
+header, nav, footer {
+    height: auto;
+    width: 100%;
+    }
+
+header { 
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: orangered;
+}
+
+header .logo{
+    margin: 0;
+    padding: .3em;
+}
+
+header h1 {font-size: 2em;}
+.subheading {font-size: 1.8em;}
+
+nav button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+nav ul {
+    margin: 15px 0 15px;
+    list-style-type: none;
+    padding: 0;
+    background-color: #157A6E;
+    overflow: hidden;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: column;
+}
+    
+nav li {
+    flex: 100%;
+    border-bottom: 1px solid white;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li:last-child {border-bottom: none;}
+nav ul li a:hover:not(.active) {background-color: #228E2E;}
+nav ul li.active a {background-color: #228E2E;}
+nav ul.hide {display: none;}
+
+footer {
+    background-color: #157A6E;
+    color: white;
+    font-size: 14px;
+}
+
+form {margin: 1em 3%;}
+
+fieldset {
+    background-color: #f2eee7;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #917a56 solid 1px;
+    width: auto;
+    box-shadow: 4px 4px 10px #666;
+}
+
+legend {
+    color: #f2eee7;
+    margin-left: 6%;
+    padding: .3em;
+    border: #917a56 solid 1px;
+    background-color: #157A6E;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em 0;
+}
+
+label span {
+    display: block;
+    font-size: 1em;
+    color: black;
+    padding-top: .7em;
+    padding-bottom: .2em;
+}
+
+.srange {
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+}
+
+.srangev {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;   
+}
+.danger {
+    font-size: 1em;
+    margin: .5em 0;
+    padding-top: .7em;
+}
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: #157A6E;
+    box-shadow: 4px 4px 10px #666;
+}
+.grid {
+    display: none;
+    padding: 0 15px 15px;
+    grid-gap: 20px;
+}
+
+.grid div img{border-radius: 220px;}
+.radio {margin: 0; padding: 0 5%; font-size: 1.2em;}
+input[type='radio'] { transform: scale(1.6);}
+
+p {
+    margin: 0;
+    padding: 0 5px 5px;
+    font-size: 1em;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;    
+}
+
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+header {
+    display: flex;
+    flex-direction: row;
+    }
+header h1 {font-size: 3em;}
+.subheading {font-size: 1.8em;}
+    
+nav button { display:none;}    
+nav ul.hide{display: flex;}
+    
+nav ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+    
+nav ul li {
+    border-bottom: none; 
+    border-right: 1px solid white;
+}
+    
+nav ul li a {padding: 6px;}
+nav li:last-child {border-right: none;}
+
+form {
+    margin: 0 5px 0;
+    width: 90%;}
+
+label span, .danger {font-size: 1.1em;}
+
+
+legend { 
+    font-size: 1.4em;
+    margin: 2% 0 0;
+}
+    
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+main div img {
+    margin: 50px 0 0;
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px #666;
+}    
+}
+    
+@media only screen and (min-width: 64em) {
+
+header h1 {font-size: 3.5em;}
+.subheading {font-size: 2em;}
+nav ul li a {padding: 4px;}
+label span, .danger {font-size: 1.3em;}
+    }
