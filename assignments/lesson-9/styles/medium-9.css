@@ -39,12 +39,15 @@ main figure.franklin img {
     padding: 7% 1em;
     max-width: 600px;
 }
+    main.townInfo {
+        flex-wrap: nowrap;
+        padding: 1.5em;
+    }
 
 div.current {max-width: 150px;}
 
 div.current img {max-width: 150px;}
     
-section.weather {width: 25%;}
     
     section.forecast {
     width: 100%;

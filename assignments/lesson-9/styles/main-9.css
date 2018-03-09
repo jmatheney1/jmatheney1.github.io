@@ -90,15 +90,14 @@ nav ul.hide {display: none;}
 main figure {margin: 0 0 0 2%;}
 main figure.franklin img {width: 100%;}
 
-section.weather {width: 100%;}
+section {width: 100%;}
 
-div.current {
+section.current {
     margin-left:auto;
     margin-right:auto;
-    max-width: 110px;
 }
 
-div.current img {max-width: 110px;}
+section.current img {max-width: 110px;}
 
 section.forecast {display: none;}
 
