@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garden Weather - Garden Tips | Gareden Anytime | Franklin</title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Current Weather, 10 Day Forcast, Franklin, Garden, Garden Plan, News">
+  <!-- external style references in the proper cascading order -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+    <h1 id="place">Garden Weather</h1>
+    <h2 class="subheading">Grow in Any Weather!</h2>
+  </header>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+    	<li><a href="/assignments/lesson-10/index.html">Home</a></li>
+    	<li class="active"><a href="/assignments/lesson-10/franklin.html">Franklin</a></li>
+    	<li><a href="/assignments/lesson-10/greenville.html">Greenville</a></li>
+    	<li><a href="/assignments/lesson-10/springfield.html">Springfield</a></li>
+    	<li><a href="/assignments/lesson-10/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/assignments/lesson-10/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+  <main>
+    <figure class="franklin">
+      <img src="images/planting-large-600.jpg" alt="Planting-Seeds" sizes="50vw"
+      srcset="images/planting-large-150.jpg 150w,
+              images/planting-large-300.jpg 300w,
+              images/planting-large-600.jpg 600w">
+    </figure>
+
+    <section class="current">
+        <h2 id="t_0_name">City, State</h2>
+        <p>Moto: <span id="t_0_moto">Moto</span></p>
+        <p>Year Founded: <span id="t_0_yearFounded">--</span></p>
+        <p>Population: <span id="t_0_population">--</span></p>
+        <p>Annual Rainfal: <span id="t_0_annualRainfall">--</span>"</p>
+        <h2>Weather Summary</h2>
+        <p> Currently: <span id="weather">nice</span></p>
+        <p> Temp: <span id="temp_f">50</span>&deg;F</p>
+            <img id="w_icon" src="#" alt="Current-Weather-Icon">
+        <p>Chance Precipitation: 0%</p>  
+        <p>Wind Speed: <span id="wind_mph">5</span>mph</p>
+        <p>Wind Chill: <span id="windchill_f"></span>&deg;F</p> 
+        <p> Comming Up <br> <span id="fcttext">great</span></p>
+            <img id="fc_icon" src="#" alt="Coming-Weather-Icon">
+    </section>
+   
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <td></td>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>High-></td>
+            <td><span id="0_high">--</span>&deg;F</td>
+            <td><span id="1_high">--</span>&deg;F</td>              
+            <td><span id="2_high">--</span>&deg;F</td>
+            <td><span id="3_high">--</span>&deg;F</td>
+            <td><span id="4_high">--</span>&deg;F</td>            
+            <td><span id="5_high">--</span>&deg;F</td>           
+            <td><span id="6_high">--</span>&deg;F</td>            
+            <td><span id="7_high">--</span>&deg;F</td>           
+            <td><span id="8_high">--</span>&deg;F</td>            
+            <td><span id="9_high">--</span>&deg;F</td>
+            </tr>
+          <tr>
+            <td>Low-></td>
+            <td><span id="0_low">--</span>&deg;F</td>
+            <td><span id="1_low">--</span>&deg;F</td>
+            <td><span id="2_low">--</span>&deg;F</td>
+            <td><span id="3_low">--</span>&deg;F</td>
+            <td><span id="4_low">--</span>&deg;F</td>              
+            <td><span id="5_low">--</span>&deg;F</td>
+            <td><span id="6_low">--</span>&deg;F</td>
+            <td><span id="7_low">--</span>&deg;F</td>              
+            <td><span id="8_low">--</span>&deg;F</td>
+            <td><span id="9_low">--</span>&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Events</h3>	
+      <p class="town-article">
+        <img src="images/sprouts.jpg" alt="Seeds-Sprouting">
+          Comming Events:<br> <span id="t_0_event1">--</span><br><span id="t_0_event2">--</span><br><span id="t_0_event3">--</span><br><br>
+          Tip of the day:<br> Even though it seems like spring temps will fall so hold of untill last frost date untill planing worm season plants. Focuse on transplants or sprouting cold season seeds. keeps seedlings moist even in colder weather, damp is better than dry. Plant cells are much hardier when they are hydrated. Though keep foliage as dry as posible.
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      Joseph Matheney CIT 230:16
+    </aside>
+    <p class="footer-bar"> &copy; 2017 All Rights Reserved | Garden Weather | <span id="date"></span></p> 
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/franklin_mn-forcast.js"></script>
+  <script src="scripts/franklin_mn-weather.js"></script>
+  <script src="scripts/franklin_mn-10day.js"></script>
+  <script src="scripts/franklin_towndata.js"></script>
+</body>
+</html>

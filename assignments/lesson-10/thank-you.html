@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garden Weather - Garden Tips | Gareden Anytime | Thank You</title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Current Weather, 10 Day Forcast, Franklin, Garden, Garden Plan, News">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="/assignments/lesson-10/styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="clearfix">
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+        <h1>Garden Weather</h1>
+        <h2><div class="subheading">Grow in Any Weather!</div></h2>
+  </header>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+    	<li><a href="/index.html">Home</a></li>
+    	<li><a href="/assignments/lesson-10/franklin.html">Franklin</a></li>
+    	<li><a href="/assignments/lesson-10/greenville.html">Greenville</a></li>
+    	<li><a href="/assignments/lesson-10/springfield.html">Springfield</a></li>
+    	<li><a href="/assignments/lesson-10/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/assignments/lesson-10/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="thank-you">
+      <h2>Thank You</h2><br>
+      <h3>Your Submission Was Successful</h3>
+  </main>
+    
+  <footer>
+    <aside>
+      Joseph Matheney CIT 230:16
+    </aside>
+    <p class="footer-bar"> &copy; 2017 All Rights Reserved | Garden Weather | <span id="date"></span></p> 
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>

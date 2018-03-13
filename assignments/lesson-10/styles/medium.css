@@ -1,0 +1,82 @@
+@media only screen and (min-width: 37.5em) {
+  
+header {flex-direction: ;}
+    
+header h1 {font-size: 2em;}    
+
+.subheading {font-size: 1.2em;}
+    
+nav button { display:none;}
+
+nav ul.hide { display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+nav ul li {
+    border-bottom: none; 
+    border-right: 1px solid white;
+}
+
+nav ul li a {padding: 6px;    }
+nav li:last-child {border-right: none;}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+main figure.franklin img {
+    padding: 7% 1em;
+    max-width: 600px;
+}
+main.townInfo {
+        flex-wrap: nowrap;
+        padding: 1.5em;
+    }
+main.thank-you {display: block;}
+    
+div.current {max-width: 150px;}
+
+div.current img {max-width: 150px;}
+    
+    
+    section.forecast {
+    width: 100%;
+    display: table;
+    padding: 1% 1em;
+}
+
+table {
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+article {
+    clear: both;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article p.town-article img {
+    width: 50%; 
+    float:right;
+}
+}

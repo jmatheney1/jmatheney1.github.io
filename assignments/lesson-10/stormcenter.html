@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garden Weather - Garden Tips | Gareden Anytime | Gallery</title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Current Weather, 10 Day Forcast, Franklin, Garden, Garden Plan, News">
+  <!-- external style references in the proper cascading order -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/storm.css" rel="stylesheet"> 
+</head>
+<body>
+
+  <header class="clearfix">
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+        <h1>Franklin Garden Weather</h1>
+        <h2 class="subheading">Grow in Any Weather!</h2>
+  </header>
+
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+    	<li><a href="/assignments/lesson-10/index.html">Home</a></li>
+    	<li><a href="/assignments/lesson-10/franklin.html">Franklin</a></li>
+    	<li><a href="/assignments/lesson-10/greenville.html">Greenville</a></li>
+    	<li><a href="/assignments/lesson-10/springfield.html">Springfield</a></li>
+    	<li class="active"><a href="/assignments/lesson-10/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/assignments/lesson-10/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+<main>
+<form action="none" method="get" enctype="multipart/form-data" name="storm" id="storm">
+    <fieldset>
+        <legend><span>User Info</span>
+        </legend>
+        <label><span>Full Name:</span>
+            <input name="fullname" type="text" size="28" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
+        </label>
+        <label><span>Email:</span>
+            <input name="email" type="email" size="28" placeholder="John.Smith@gmail.com">
+        </label>
+        <label><span>Phone:</span>
+            <input name="phone" type="tel" size="28" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
+        </label>
+        <label><span>ZIP Code:</span>
+            <input name="zipCode" type="text" size="28"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend><span>Storm Info</span>
+        </legend>
+        <label><span>Date:</span>
+            <input name="date" type="date">
+        </label>
+        <label><span>Type:</span>
+            <input list="storms" name="stormType" size="16">
+            <datalist id="storms">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+        </label>
+        <label class="srange"><span>Severity (1-10):</span> 
+            <input name="severity" type="range" id="severity" value="1" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+            <span class="srangev" id="severityRange">1 </span>
+        </label>
+        <label><span>Region:</span>
+            <select id="region" name="stormRegion" style="width: 170px;">
+                <optgroup label="select Region..." disabled></optgroup>
+                <option value="Franklin">Frankin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </select>
+        </label>
+    </fieldset>    
+
+    <fieldset>
+        <legend><span>Other</span></legend>
+        <section class="danger"><span>User In-Danger?</span><br>
+            <label for="opt1" class="radio">
+                <input id="opt1" type="radio" name="q1" value="yes"> 
+                Yes</label><br>
+            <label for="opt2" class="radio">
+                <input id="opt2" type="radio" name="q1" value="no" checked> No</label><br>
+            <label for="opt3" class="radio">
+                <input id="opt3" type="radio" name="q1" value="maybe"> Maybe</label><br>
+        </section>
+        <label class="tarea-comment"><span>Addtional Info or Comments</span>
+            <textarea name="message" cols="30" rows="10" placeholder="Type Here"></textarea>
+        </label>
+        <label><span>Image Upload:</span>
+            <input type="file" name="pic" accept="image/*">
+        </label>
+    </fieldset>
+      <input name="submitBtn" type="submit" class="submitBtn" formaction="/assignments/lesson-9/thank-you.html">
+</form>
+      <section class="grid">
+        <div><img src="images/barn-lightning.jpg" alt="Barn-Lightning">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></div>
+        <div><img src="images/tree-desert.jpg" alt="Tree-Desert">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></div>
+        <div><img src="images/tree-snow.jpg" alt="Trees-Snow">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></div>
+      </section>
+</main>
+  <footer>
+    <aside>
+      Joseph Matheney CIT 230:16
+    </aside>
+    <p class="footer-bar"> &copy; 2017 All Rights Reserved | Garden Weather | <span id="date"></span></p> 
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>  
+  <script src="scripts/severity.js"></script>
+</body>
+</html>
