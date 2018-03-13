@@ -23,11 +23,11 @@ townObject.onload = function () {
     document.getElementById('t_1_population').innerHTML = townData.towns["1"].currentPopulation;
     document.getElementById('t_1_annualRainfall').innerHTML = townData.towns["1"].averageRainfall;
     // 3rd town 
-    document.getElementById('t_2_name').innerHTML = townData.towns["2"].name;
-    document.getElementById('t_2_moto').innerHTML =  townData.towns["2"].motto;
-    document.getElementById('t_2_yearFounded').innerHTML = townData.towns["2"].yearFounded;
-    document.getElementById('t_2_population').innerHTML = townData.towns["2"].currentPopulation;
-    document.getElementById('t_2_annualRainfall').innerHTML = townData.towns["2"].averageRainfall;
+    document.getElementById('t_3_name').innerHTML = townData.towns["3"].name;
+    document.getElementById('t_3_moto').innerHTML =  townData.towns["3"].motto;
+    document.getElementById('t_3_yearFounded').innerHTML = townData.towns["3"].yearFounded;
+    document.getElementById('t_3_population').innerHTML = townData.towns["3"].currentPopulation;
+    document.getElementById('t_3_annualRainfall').innerHTML = townData.towns["3"].averageRainfall;
     
     
     
