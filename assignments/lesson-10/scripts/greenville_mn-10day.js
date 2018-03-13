@@ -1,5 +1,5 @@
 var weatherObject3 = new XMLHttpRequest();
-weatherObject3.open('GET', 'http://api.wunderground.com/api/343d8105ba55767e/forecast10day/q/WI/greenville.json', true  );
+weatherObject3.open('GET', 'https://api.wunderground.com/api/343d8105ba55767e/forecast10day/q/WI/greenville.json', true  );
 
 weatherObject3.send();
 
