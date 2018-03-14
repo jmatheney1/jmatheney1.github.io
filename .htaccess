@@ -1,5 +1,5 @@
 # 404 Error page redirect
-ErrorDocument 404 /404-error.html
+ErrorDocument 404 /assignments/weathersite/404-error.html
 
 #Deny List
         
