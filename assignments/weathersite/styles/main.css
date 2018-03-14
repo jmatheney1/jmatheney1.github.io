@@ -71,7 +71,7 @@ nav ul li.active a {background-color: #228E2E;}
 nav ul.hide {display: none;}
 
 
-main figure.franklin img {width: 100%;}
+main figure.franklin img {width: 90%;}
 main p {padding: 0 .5rem .5rem;}
 .current {max-width: 400px;}
 section.forecast {display: none;}
