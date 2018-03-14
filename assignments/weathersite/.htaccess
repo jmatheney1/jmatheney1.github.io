@@ -1,11 +1,10 @@
-#Allows ModRerite to work
-Options FloowSymLinks
+# 404 Error page redirect
+ErrorDocument 404 /404-error.html
 
-#Trun on rewrite engine
-RewriteEngine On
-RewriteBase /
-
-# Redirect all requests to index
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . index.html
+#Deny List
+        
+order allow,deny
+deny from 123.123.123.123 #specify a specific address
+deny from 123.123.123.123/30 #specify a subnet range
+deny from 123.123.* #specify an IP address wildcard
+allow from all
