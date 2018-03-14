@@ -18,7 +18,7 @@
       <figure class="logo">
         <a href="/assignments/weathersite/index.html"><img src="images/logo.png" alt="logo"></a>
       </figure>
-        <h1>Franklin Garden Weather</h1>
+        <h1>Storm Center</h1>
         <h2 class="subheading">Grow in Any Weather!</h2>
   </header>
 
@@ -62,7 +62,7 @@
             <input list="storms" name="stormType" size="16">
             <datalist id="storms">
                 <option value="Flash Flood">
-                <option value="Hail">
+                <option value="Hail"> 
                 <option value="Hurricane">
                 <option value="Thunderstorm">
                 <option value="Tornado">
@@ -84,7 +84,7 @@
 
     <fieldset>
         <legend><span>Other</span></legend>
-        <section class="danger"><span>User In-Danger?</span><br>
+        <section><span>User In-Danger?</span><br>
             <label for="opt1" class="radio">
                 <input id="opt1" type="radio" name="q1" value="yes"> 
                 Yes</label><br>
@@ -94,10 +94,10 @@
                 <input id="opt3" type="radio" name="q1" value="maybe"> Maybe</label><br>
         </section>
         <label class="tarea-comment"><span>Addtional Info or Comments</span>
-            <textarea name="message" cols="30" rows="10" placeholder="Type Here"></textarea>
+            <textarea name="message" cols="20" rows="10" placeholder="Type Here"></textarea>
         </label>
         <label><span>Image Upload:</span>
-            <input type="file" name="pic" accept="image/*">
+            <input id="image" type="file" name="pic"  accept="image/*">
         </label>
     </fieldset>
       <input name="submitBtn" type="submit" class="submitBtn" formaction="/assignments/lesson-9/thank-you.html">

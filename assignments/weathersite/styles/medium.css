@@ -47,16 +47,22 @@ th, td {
 }
 form {
     margin: 0 5px 0;
-    width: 90%;}
+}
 
 label span, .danger { font-size: 1.1em;}
 
 
-legend { 
+legend {
     font-size: 1.4em;
     margin: 2% 0 0;
 }
     
+.strom-grid {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    
+}   
 .grid {
     display: flex;
     flex-direction: column;

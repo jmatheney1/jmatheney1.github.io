@@ -98,7 +98,7 @@ article p.town-article img {
 }
 
 form {
-    max-width: 400px;
+    max-width: 300px;
     padding: 0 1rem 0}
 
 fieldset {
@@ -143,12 +143,7 @@ input.submitBtn {
     background: #157A6E;
     box-shadow: .5rem .5rem .5rem #666;
 }
-.storm-grid {
-    display: none;
-    padding: 0 15px 15px;
-}
 
-.storm-grid img{border-radius: 220px;}
 
 .radio {
     margin: 0; 
@@ -167,7 +162,9 @@ footer {
     background-color: #157A6E;
     color: white;
 }
-
+.strom-grid {
+    display: none;
+}
 .clearfix:after {
     content: "";
     display: table;
