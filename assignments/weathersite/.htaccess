@@ -1,0 +1,11 @@
+#Allows ModRerite to work
+Options FloowSymLinks
+
+#Trun on rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect all requests to index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.html
