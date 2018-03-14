@@ -144,7 +144,7 @@ input.submitBtn {
     box-shadow: .5rem .5rem .5rem #666;
 }
 
-
+.city {padding: 0 1rem 1rem;}
 .radio {
     margin: 0; 
     padding: .5rem; 
