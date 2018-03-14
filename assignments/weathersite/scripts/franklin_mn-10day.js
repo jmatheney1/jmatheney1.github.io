@@ -30,5 +30,5 @@ weatherObject3.onload = function () {
     document.getElementById('7_low').innerHTML = forcastTen.forecast.simpleforecast.forecastday["7"].low.fahrenheit;
     document.getElementById('8_low').innerHTML = forcastTen.forecast.simpleforecast.forecastday["8"].low.fahrenheit;
     document.getElementById('9_low').innerHTML = forcastTen.forecast.simpleforecast.forecastday["9"].low.fahrenheit;
-  
+
 };

@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Garden Weather - Garden Tips | Gareden Anytime | Gallery</title>
+  <title>Garden Weather - Report Weather conditions | Stormcenter</title>
   <meta name="author" content="Joseph Matheney">
-  <meta name="description" content="Current Weather, 10 Day Forcast, Franklin, Garden, Garden Plan, News">
-  <!-- external style references in the proper cascading order -->
+  <meta name="description" content="Help us understand the storm conditions in your area">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/storm.css" rel="stylesheet"> 
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="clearfix">
       <figure class="logo">
-        <img src="images/logo.png" alt="logo">
+        <a href="/assignments/weathersite/index.html"><img src="images/logo.png" alt="logo"></a>
       </figure>
         <h1>Franklin Garden Weather</h1>
         <h2 class="subheading">Grow in Any Weather!</h2>
@@ -24,30 +25,30 @@
   <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
         <ul id="pNav" class="hide">
-    	<li><a href="/assignments/lesson-10/index.html">Home</a></li>
-    	<li><a href="/assignments/lesson-10/franklin.html">Franklin</a></li>
-    	<li><a href="/assignments/lesson-10/greenville.html">Greenville</a></li>
-    	<li><a href="/assignments/lesson-10/springfield.html">Springfield</a></li>
-    	<li class="active"><a href="/assignments/lesson-10/stormcenter.html">Storm Center</a></li>
-    	<li><a href="/assignments/lesson-10/gallery.html">Gallery</a></li>
+    	<li><a href="/assignments/weathersite/index.html">Home</a></li>
+    	<li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+    	<li><a href="/assignments/weathersite/greenville.html">Greenville</a></li>
+    	<li><a href="/assignments/weathersite/springfield.html">Springfield</a></li>
+    	<li class="active"><a href="/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
     </ul>		
   </nav>
-<main>
+<main class="stormcenter">
 <form action="none" method="get" enctype="multipart/form-data" name="storm" id="storm">
     <fieldset>
         <legend><span>User Info</span>
         </legend>
         <label><span>Full Name:</span>
-            <input name="fullname" type="text" size="28" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
+            <input name="fullname" type="text" size="16" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
         </label>
         <label><span>Email:</span>
-            <input name="email" type="email" size="28" placeholder="John.Smith@gmail.com">
+            <input name="email" type="email" size="20" placeholder="John.Smith@gmail.com">
         </label>
         <label><span>Phone:</span>
-            <input name="phone" type="tel" size="28" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
+            <input name="phone" type="tel" size="16" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
         </label>
         <label><span>ZIP Code:</span>
-            <input name="zipCode" type="text" size="28"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
+            <input name="zipCode" type="text" size="16"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
         </label>
     </fieldset>
 
@@ -101,7 +102,7 @@
     </fieldset>
       <input name="submitBtn" type="submit" class="submitBtn" formaction="/assignments/lesson-9/thank-you.html">
 </form>
-      <section class="grid">
+      <section class="strom-grid">
         <div><img src="images/barn-lightning.jpg" alt="Barn-Lightning">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p></div>
         <div><img src="images/tree-desert.jpg" alt="Tree-Desert">

@@ -1,0 +1,175 @@
+* { box-sizing: border-box;}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    }
+
+header, nav, main, footer {
+    height: auto;
+    width: 100%;
+    }
+
+header { 
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/assignments/lesson-8/images/vegies6.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    color: orangered;
+}
+
+header .logo{margin: 0;}
+
+header h1, .subheading {
+
+    padding: .3rem;
+    border: #a45c44 solid .1rem;
+    background-color: #d8dad3;
+    border-radius: .4rem;
+}
+
+
+nav button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #157A6E;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+
+nav li {
+    flex: 100%;
+    border-bottom: .1rem solid white;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav li:last-child {border-bottom: none;}
+nav ul li a:hover {background-color: #228E2E;}
+nav ul li.active a {background-color: #228E2E;}
+nav ul.hide {display: none;}
+
+
+main figure.franklin img {width: 100%;}
+main p {padding: 0 .5rem .5rem;}
+.current {max-width: 400px;}
+section.forecast {display: none;}
+main.stormcenter {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;    
+}
+main .grid {
+    padding: 0 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+main .grid, div, img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+article p.town-article img {
+  max-width: 85%;
+  margin: 1rem;
+}
+
+form {
+    max-width: 400px;
+    padding: 0 1rem 0}
+
+fieldset {
+    background-color: #f2eee7;
+    border-radius: .8rem;
+    margin: 1.5rem 0;
+    border: #917a56 solid .1rem;
+    box-shadow: 1rem 1rem 1rem #666;
+}
+
+legend {
+    color: #f2eee7;
+    padding: .3rem;
+    border: #917a56 solid 1px;
+    background-color: #157A6E;
+    border-radius: .4rem;
+}
+
+label span {
+    display: block;
+    color: black;
+    padding-top: 1.5rem;
+    padding-bottom: .2rem;
+}
+
+
+.srangev {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;   
+}
+
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid .1rem #111;
+    border-radius: 1rem;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1rem;
+    padding: .5rem;
+    background: #157A6E;
+    box-shadow: .5rem .5rem .5rem #666;
+}
+.storm-grid {
+    display: none;
+    padding: 0 15px 15px;
+}
+
+.storm-grid img{border-radius: 220px;}
+
+.radio {
+    margin: 0; 
+    padding: 5% 7 4; 
+    font-size: 1.2rem;
+}
+
+input[type='radio'] {transform: scale(1.6);}
+
+p {
+    margin: 0;
+    padding: 0 5px 5px;
+}
+
+footer {
+    background-color: #157A6E;
+    color: white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
