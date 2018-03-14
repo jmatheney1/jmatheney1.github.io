@@ -58,9 +58,10 @@ legend {
 }
     
 .strom-grid {
-    float: right;
     display: flex;
     flex-direction: column;
+    width: auto;
+    max-width: 50%;
     
 }   
 .grid {
