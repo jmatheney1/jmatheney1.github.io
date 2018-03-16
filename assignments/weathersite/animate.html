@@ -8,20 +8,18 @@
   <meta name="description" content="Current Weather, 10 Day Forcast, Franklin, Garden, Garden Plan, News">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="/assignments/lesson-10/styles/normalize.css" rel="stylesheet">
+  <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/medium.css" rel="stylesheet">
   <link href="styles/large.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
 </head>
 <body>
 
-  <header class="clearfix">
-      <figure class="logo">
-        <a href="/assignments/weathersite/index.html"><img src="images/logo.png" alt="logo"></a>
-      </figure>
-        <h1>Garden Weather</h1>
-        <h2 class="subheading">Grow in Any Weather!</h2>
-  </header>
+
 
   <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
@@ -34,13 +32,19 @@
     	<li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
     </ul>		
   </nav>
+      <div class="newsletterForm"> 
+          <p>Please give us your email address and we'll send you stuff your really don't care about, everyday!</p>
+          <input type="text" placeholder="Email@Address.com" class="textbox" id="emailField">
+          <input type="submit" value="Click Here" class="btn" id="submitBtn">
+      </div>
+  
     
-  <main class="thank-you">
-      <h2>Sorry There was an Error</h2>
-  </main>
-  <section>
-      <h3>Please select another option from the navigation</h3>
-  </section>
+    
+    
+    <div class="item animated bounce"></div>
+    
+    
+    
   <footer>
     <aside>
       Joseph Matheney CIT 230:16
@@ -50,5 +54,15 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script>
+      $('#submitBtn').on('click', function() {
+          $('#emailField').addClass('animated shake');
+          		$('#emailField').one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationend', function() {
+                $('#emailField').removeClass('animated shake')
+            });
+          });
+    </script>
 </body>
 </html>

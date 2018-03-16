@@ -7,6 +7,7 @@
   <meta name="author" content="Joseph Matheney">
   <meta name="description" content="Help us understand the storm conditions in your area">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
   <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/medium.css" rel="stylesheet">
@@ -38,16 +39,16 @@
     <fieldset>
         <legend><span>User Info</span>
         </legend>
-        <label><span>Full Name:</span>
+        <label><span>&#8727Full Name:</span>
             <input name="fullname" type="text" size="16" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
         </label>
         <label><span>Email:</span>
             <input name="email" type="email" size="20" placeholder="John.Smith@gmail.com">
         </label>
-        <label><span>Phone:</span>
+        <label><span>&#8727Phone:</span>
             <input name="phone" type="tel" size="16" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
         </label>
-        <label><span>ZIP Code:</span>
+        <label><span>&#8727ZIP Code:</span>
             <input name="zipCode" type="text" size="16"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
         </label>
     </fieldset>
@@ -55,11 +56,11 @@
     <fieldset>
         <legend><span>Storm Info</span>
         </legend>
-        <label><span>Date:</span>
-            <input name="date" type="date">
+        <label><span>&#8727Date:</span>
+            <input name="date" type="date" required>
         </label>
-        <label><span>Type:</span>
-            <input list="storms" name="stormType" size="16">
+        <label><span>&#8727Type:</span>
+            <input list="storms" name="stormType" size="16"  required>
             <datalist id="storms">
                 <option value="Flash Flood">
                 <option value="Hail"> 
@@ -84,9 +85,9 @@
 
     <fieldset>
         <legend><span>Other</span></legend>
-        <section class="danger"><span>User In-Danger?</span><br>
+        <section class="danger"><span>&#8727User In-Danger?</span><br>
             <label for="opt1" class="radio">
-                <input id="opt1" type="radio" name="q1" value="yes"> 
+                <input id="opt1" type="radio" name="q1" value="yes" required> 
                 Yes</label><br>
             <label for="opt2" class="radio">
                 <input id="opt2" type="radio" name="q1" value="no" checked> No</label><br>

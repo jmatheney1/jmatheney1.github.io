@@ -170,3 +170,16 @@ footer {
     display: table;
     clear: both;
 }
+
+/*TEMP*/
+.item {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    margin: 300px auto 300px;
+
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+
+}

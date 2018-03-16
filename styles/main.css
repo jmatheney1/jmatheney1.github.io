@@ -17,13 +17,13 @@ h1 {
 h2 {
     font-size: 1.5rem;
     text-align: center;
-    border-bottom: 2px solid #bbb;
+    border-bottom: .1rem solid #bbb;
 }
 
 header, main, footer  {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 600px;
+    max-width: 700px;
     
 }
 
@@ -40,5 +40,5 @@ header img {
 }
 
 footer {
-    font-size: 12px;
+    font-size: .8rem;
 }
