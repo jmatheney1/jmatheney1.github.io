@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Filters</title>
+	<link rel="stylesheet" href="css/filters.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+		// All jQuery code goes here
+        $('li:first').css('background-color', 'green');
+        $('li:last').css('background-color', 'pink');
+        $('li:even').css('background-color', 'orange');
+        $('li:odd').css('background-color', 'yellow');
+        $('li:eq(3)').css('background-color', 'red');
+	})
+	</script>
+</head>
+<body>
+<ul>
+		<li>Apples</li>
+		<li>Oranges</li>
+		<li>Peaches</li>
+		<li>Strawberries</li>
+		<li>Kiwi</li>
+</ul>
+
+</body>
+</html>
