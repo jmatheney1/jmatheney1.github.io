@@ -31,6 +31,7 @@
             <li class="active"><a href="events.html">EVENTS</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             <li><a href="shop.html">SHOP</a></li>
+            <li><a href="service.html">SERVICE</a></li>
             <li><a href="trails.html">TRAILS</a></li>     
         </ul>  
   </nav>
@@ -50,7 +51,7 @@
         
         <h1 class="event">Butte 100, July 29th</h1>
       <div class="wrapper">
-        <iframe class="icon" id="content" scrolling="no" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7035069&x=-12194007&y=4663857&z=6">
+        <iframe class="icon" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7035069&x=-12194007&y=4663857&z=6">
         </iframe>
         <div class="nested">
             <a class="box"><p>A 100mi figure-eight race, on the “North Loop” and “South Loop,” guaranteeing riders never see the same trail twice. The north loop has dense woods with tough packed dirt, progressing to decomposed granite, and a high-altitude desert with heavy sand at times. The first portion of the trail will test nearly every facet of pure mountain bike skill. The South Loop is a crowd favorite with epic amounts of single track on the Continental Divide Trail, with sweeping views of the area’s mountains, and unparalleled athletic tests such as the notorious Basin Creek climb<br>Price - $280</p></a>
@@ -61,7 +62,7 @@
       
         <h1 class="event">Cycle the Continental Divide Trail, Aug 11th-12th</h1>
       <div class="wrapper">
-        <iframe class="icon" id="content" scrolling="no" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7011644&x=-12194007&y=4663857&z=6">
+        <iframe class="icon" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7011644&x=-12194007&y=4663857&z=6">
         </iframe>
         <div class="nested">
             <a class="box"><p>A 150mi 2-day race, An easy-access trail that follows roadways along lowland Rd. This trail is an out-and-back, 150-mile trip. The reward for the first 75-miles is you get to do it again the next day. Tent and hammock sites are provided for racers, additional sites available at $35/tent. Athletes breakfast is provided for participants<br>Price - $430</p></a>
@@ -74,16 +75,16 @@
     <fieldset class="registration">
         <legend><span>Participant Info</span>
         </legend>
-        <label><span>&#8727Full Name:</span>
+        <label><span>&#8727;Full Name:</span>
             <input name="fullname" type="text" size="16" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
         </label>
-        <label><span>&#8727Email:</span>
+        <label><span>&#8727;Email:</span>
             <input name="email" type="email" size="20" placeholder="John.Smith@gmail.com" required>
         </label>
-        <label><span>&#8727Phone:</span>
+        <label><span>&#8727;Phone:</span>
             <input name="phone" type="tel" size="16" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
         </label>
-        <label><span>&#8727ZIP Code:</span>
+        <label><span>&#8727;ZIP Code:</span>
             <input name="zipCode" type="text" size="16"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
         </label>
     </fieldset>
@@ -91,28 +92,30 @@
     <fieldset class="registration">
         <legend><span>Race Info</span>
         </legend>
-        <label><span>&#8727DOB:</span>
+        <label><span>&#8727;DOB:</span>
             <input name="date" type="date" required>
         </label>
-        <label><span>&#8727Type:</span>
-            <input list="event" name="event" size="16"  required>
-            <datalist id="event">
+        <label><span>&#8727;Type:</span>
+            <input list="type" name="type" size="16"  required>
+            <datalist id="type">
                 <option value="Standard">
                 <option value="Youth"> 
                 <option value="Relay">
+            </datalist>
+        </label>
+        <label><span>&#8727;Event:</span>
+            <input list="event" name="event" size="16"  required>
+            <datalist id="event">
+                <option value="Butte 100">
+                <option value="Continental Divide"> 
+                <option value="Other">
             </datalist>
         </label>
         <label class="srange"><span>Skil Level (1-10):</span> 
             <input name="skil" type="range" id="skil" value="1" min="1" max="10" step="1" oninput="adjustSkil(this.value)" onchange="adjustSkil(this.value)">
             <span class="srangev" id="skilRange">1 </span>
         </label>
-        <label><span>&#8727Event:</span>
-            <select id="event" name="eventId" style="width: 170px;">
-                <optgroup label="select Event..."></optgroup>
-                <option value="Butte 100">Butte 100</option>
-                <option value="Continental Divide">Continental Divide</option>
-            </select>
-        </label>
+
     </fieldset>
         
     <fieldset class="registration">
@@ -124,7 +127,7 @@
     <fieldset class="registration">
         <legend><span>Other</span></legend>
         <label class="tarea-comment"><span>Special Acommodations or comments<br></span>
-            <textarea name="comments" cols="auto" rows="8" placeholder="Type Here"></textarea>
+            <textarea name="comments" rows="8" placeholder="Type Here"></textarea>
         </label>
         <label for="file-upload" class="custom-file-upload"><span>Upload Release Form</span><span id="file-selected"></span>
             <input name="waiverUpload" id="file-upload" type="file"  accept="pdf/*">
@@ -134,9 +137,9 @@
     </form>
   <footer>
     <aside>
-      LuckyDuck Design
+      <a href="http://www.drcloudservices.com/"> &copy; 2018 | LuckyDuck Design</a>
     </aside>
-    <p class="footer-bar"> &copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="date"></span></p> 
+      <p class="footer-bar"><a href="data/credits.txt">Credits</a> | <a href="#">walkthrough</a> |<span id="date"></span></p> 
   </footer>
   <script src="scripts/pupup.js"></script>    
   <script src="scripts/hamburger.js"></script>
