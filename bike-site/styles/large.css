@@ -9,3 +9,4 @@ main{padding-top: 140px;}
 form {grid-template-columns: 1fr 1fr;}
 form :nth-child(5) {grid-column: 1/3;}
 .box li {padding: 0 1rem 0 10%;}
+}
