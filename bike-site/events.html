@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mountain Spoke Bike Shop + Tours </title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Bozeman, MT mountain bike tour, boike shop sales and repairs. Trail maps and conditions.">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,500i" rel="stylesheet">
+  <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <figure class="logo">
+        <a href="/bike-site"><img src="images/logo.png" alt="logo"></a>
+      </figure>
+    <div class="logo">
+        <h1>Mountain Spoke</h1>
+        <h2>Adventures Starts Here</h2>
+    </div>
+      
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li class="active"><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="trails.html">TRAILS</a></li>     
+        </ul>  
+  </nav>
+      
+  </header>
+
+  <main>
+      
+      <div class="action">
+        <p>Discounted Service for Event Participents</p>
+        <a id="sale" href="service.html">Click Here</a>
+      </div>
+      
+      <div>
+        <h1>Events</h1>
+      </div>
+        
+        <h1 class="event">Butte 100, July 29th</h1>
+      <div class="wrapper">
+        <iframe class="icon" id="content" scrolling="no" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7035069&x=-12194007&y=4663857&z=6">
+        </iframe>
+        <div class="nested">
+            <a class="box"><p>A 100mi figure-eight race, on the “North Loop” and “South Loop,” guaranteeing riders never see the same trail twice. The north loop has dense woods with tough packed dirt, progressing to decomposed granite, and a high-altitude desert with heavy sand at times. The first portion of the trail will test nearly every facet of pure mountain bike skill. The South Loop is a crowd favorite with epic amounts of single track on the Continental Divide Trail, with sweeping views of the area’s mountains, and unparalleled athletic tests such as the notorious Basin Creek climb<br>Price - $280</p></a>
+            <a class="box"><p>Timeline<br><br>Registration Opens Jan 9th<br>Packet Pickup July 28th<br>Maroon Activities Center:<br>550 E. Mercury St.<br>Butte, MT 59701</p></a>
+            <a class="box"><p>When &amp; Where?<br><br>Saturday, July 29<br>Homestake Trailhead National Forest<br>Whitehall, MT 59759</p></a>
+        </div>   
+      </div>
+      
+        <h1 class="event">Cycle the Continental Divide Trail, Aug 11th-12th</h1>
+      <div class="wrapper">
+        <iframe class="icon" id="content" scrolling="no" src="https://www.mtbproject.com/widget?v=3&map=1&type=trail&id=7011644&x=-12194007&y=4663857&z=6">
+        </iframe>
+        <div class="nested">
+            <a class="box"><p>A 150mi 2-day race, An easy-access trail that follows roadways along lowland Rd. This trail is an out-and-back, 150-mile trip. The reward for the first 75-miles is you get to do it again the next day. Tent and hammock sites are provided for racers, additional sites available at $35/tent. Athletes breakfast is provided for participants<br>Price - $430</p></a>
+            <a class="box"><p>Timeline<br><br>Registration Opens Feb 1st<br>Packet Pickup Aug 4th<br>Maroon Activities Center:<br>550 E. Mercury St.<br>Butte, MT 59701</p></a>
+            <a class="box"><p>When &amp; Where?<br><br>Saturday, Aug 11th<br>Lowland Rd &amp; E Elk Park Rd<br>Butte, MT 59701</p></a>
+        </div>   
+      </div>
+    </main>
+    <form action="none" method="get" enctype="multipart/form-data" name="registration" id="registration">
+    <fieldset class="registration">
+        <legend><span>Participant Info</span>
+        </legend>
+        <label><span>&#8727Full Name:</span>
+            <input name="fullname" type="text" size="16" placeholder="John Smith" pattern="[a-zA-Z -._]{5,99}" required>
+        </label>
+        <label><span>&#8727Email:</span>
+            <input name="email" type="email" size="20" placeholder="John.Smith@gmail.com" required>
+        </label>
+        <label><span>&#8727Phone:</span>
+            <input name="phone" type="tel" size="16" placeholder="123-456-7891" pattern="[0-9]{10,20}" required>
+        </label>
+        <label><span>&#8727ZIP Code:</span>
+            <input name="zipCode" type="text" size="16"  placeholder="ZIP" pattern="[-_0-9]{5,9}" required>
+        </label>
+    </fieldset>
+
+    <fieldset class="registration">
+        <legend><span>Race Info</span>
+        </legend>
+        <label><span>&#8727DOB:</span>
+            <input name="date" type="date" required>
+        </label>
+        <label><span>&#8727Type:</span>
+            <input list="event" name="event" size="16"  required>
+            <datalist id="event">
+                <option value="Standard">
+                <option value="Youth"> 
+                <option value="Relay">
+            </datalist>
+        </label>
+        <label class="srange"><span>Skil Level (1-10):</span> 
+            <input name="skil" type="range" id="skil" value="1" min="1" max="10" step="1" oninput="adjustSkil(this.value)" onchange="adjustSkil(this.value)">
+            <span class="srangev" id="skilRange">1 </span>
+        </label>
+        <label><span>&#8727Event:</span>
+            <select id="event" name="eventId" style="width: 170px;">
+                <optgroup label="select Event..."></optgroup>
+                <option value="Butte 100">Butte 100</option>
+                <option value="Continental Divide">Continental Divide</option>
+            </select>
+        </label>
+    </fieldset>
+        
+    <fieldset class="registration">
+        <legend><span>Downloads/links</span></legend>
+            <div>Release Form<br><a href="images/Release.pdf">.pdf</a></div>
+            <div>Checklist<br><a href="images/checklis.pdf">.pdf</a></div>
+    </fieldset>
+        
+    <fieldset class="registration">
+        <legend><span>Other</span></legend>
+        <label class="tarea-comment"><span>Special Acommodations or comments<br></span>
+            <textarea name="comments" cols="auto" rows="8" placeholder="Type Here"></textarea>
+        </label>
+        <label for="file-upload" class="custom-file-upload"><span>Upload Release Form</span><span id="file-selected"></span>
+            <input name="waiverUpload" id="file-upload" type="file"  accept="pdf/*">
+        </label>
+    </fieldset>
+      <input name="submitBtn" type="submit" class="submitBtn" formaction="thank-you.html">
+    </form>
+  <footer>
+    <aside>
+      LuckyDuck Design
+    </aside>
+    <p class="footer-bar"> &copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="date"></span></p> 
+  </footer>
+  <script src="scripts/pupup.js"></script>    
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/active.js"></script>
+  <script src="scripts/skil.js"></script>
+  </body>
+</html>

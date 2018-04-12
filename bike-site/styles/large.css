@@ -1,0 +1,10 @@
+@media only screen and (min-width: 64em) {
+header h1 {font-size: 3rem; margin: 0;}    
+header h2 {font-size: 1.8rem; margin: .5rem 0 0;}
+header {grid-template-columns: 12% 35% 50%; position: fixed; background-color: white; width: 100%; max-height: 150px;}
+.action, .action2 {max-height: 350px; font-size: 3rem;}
+.wrapper {grid-template-columns: 1.5fr 1fr;}
+main{padding-top: 180px;}
+.tour {grid-template-columns: 1fr 1fr 1fr;}
+form {grid-template-columns: 1fr 1fr;}
+form :nth-child(5) {grid-column: 1/3;}

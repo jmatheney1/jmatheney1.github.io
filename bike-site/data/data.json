@@ -1,0 +1,63 @@
+mydata = '[{
+    "id": "Basic",
+    "dcs": "tune-up",
+    "price": "$89.99*",
+    "incl": [
+        "Lube Necessary Moving Parts",
+        "Adjust Brakes & Shifters",
+        "True Wheels",
+        "Wipe Down Bike",
+        "Adjustments Tested",
+        "Labor For Tire & Tube Replacement"
+    ]
+  },
+      
+  {
+    "id": "Major",
+    "dcs": "tune-up",
+    "price": "$129.99*",
+    "incl": [
+        "Basic Tune-Up, PLUS",
+        "Labor For Cable, Chain, Grip & Spoke Replacement (Up to 3 Spokes)",
+        "Drivetrain Cleaned",
+        "Full Bike Wash"
+    ]
+  },
+
+  {
+    "id": "Deluxe",
+    "dcs": "tune-up",
+    "price": "$174.99*",
+    "incl": [
+        "Major Tune-Up, PLUS",
+        "Headset & Bottom Bracket Overhaul",
+        "Remove, Degrease & Refresh Entire Drivetrain",
+        "Major Spoke Replacement (Up to 6 Spokes)",
+        "Deep Clean Wheels & Hubs",
+        "Bike Polish"
+    ]
+  },
+
+  {
+    "id": "Kid's",
+    "dcs": "tune-up",
+    "price": "$49.99*",
+    "incl": [
+        "True Wheels",
+        "Adjustment of All Necessary Mechanical Parts",
+        "Tighten Nuts & Bolts"
+    ]
+  },
+
+  {
+    "id": "Bicycle Assembley",
+    "dcs": "tune-up",
+    "price": "$89.99*",
+    "incl": [
+        "Complete Assemble of Bicycle",
+        "Adjust Brakes & Shifters",
+        "Lube Necessary Moving Parts",
+        "Wipe Down Bike",
+        "Adjustments Tested"
+    ]
+  }]';

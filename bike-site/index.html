@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mountain Spoke Bike Shop + Tours </title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Bozeman, MT mountain bike tour, boike shop sales and repairs. Trail maps and conditions.">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,500i" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <figure class="logo">
+        <a href="/bike-site"><img src="images/logo.png" alt="logo"></a>
+      </figure>
+    <div class="logo">
+    <h1>Mountain Spoke</h1>
+    <h2>Adventures Starts Here</h2>
+    </div>
+        <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+    	<li class="active"><a href="/bike-site/">HOME</a></li>
+    	<li><a href="tours.html">TOURS</a></li>
+    	<li><a href="events.html">EVENTS</a></li>
+    	<li><a href="contact.html">CONTACT</a></li>
+    	<li><a href="shop.html">SHOP</a></li>
+    	<li><a href="trails.html">TRAILS</a></li>     
+    </ul>  
+  </nav>
+      
+  </header>
+
+  <main>
+      
+      <div class="action">
+        <p>Shop Our Spring Sale Now - Apr 30th</p>
+        <a id="sale" href="shop.html">Click Here</a>
+      </div>
+
+      <div class="wrapper">
+          <iframe class="icon" id="content" src="https://www.youtube.com/embed/_usOxIBrvUE?enablejsapi=1&end=305&fs=0&modestbranding=1&rel=0&iv_load_policy=3" allowfullscreen>
+          </iframe>
+          
+          <div class="nested">
+              <a href="tours.html" class="icon"><div class="box1" id="tours"><img src="images/adventure-1.png" alt="Adventure Icon"><p>Adventure Tours Click Here</p></div></a>
+              <a href="events.html" class="icon"><div class=" box2" id="events"><img src="images/calendar-3.png" alt="Calendar Icon"><p>Events Click Here</p></div></a>
+              <a href="trails.html" class="icon"><div class="box3" id="trails"><img src="images/gps-2.png" alt="GPS Icon"><p>Trails Click Here</p></div></a>
+          </div>      
+      </div>
+
+
+
+  </main>
+    
+  <footer>
+    <aside>
+      LuckyDuck Design
+    </aside>
+    <p class="footer-bar"> &copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="date"></span></p> 
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/active.js"></script>
+</body>
+</html>

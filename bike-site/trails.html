@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mountain Spoke Bike Shop + Tours </title>
+  <meta name="author" content="Joseph Matheney">
+  <meta name="description" content="Bozeman, MT mountain bike tour, boike shop sales and repairs. Trail maps and conditions.">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:500,500i" rel="stylesheet">
+  <link href="images/favicon2.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <figure class="logo">
+        <a href="/bike-site"><img src="images/logo.png" alt="logo"></a>
+      </figure>
+    <div class="logo">
+        <h1>Mountain Spoke</h1>
+        <h2>Adventures Starts Here</h2>
+    </div>
+      
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="pNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li class="active"><a href="trails.html">TRAILS</a></li>     
+        </ul>  
+  </nav>
+      
+  </header>
+
+  <main>
+      
+      <div class="action">
+        <p>Gear Up For The Ride of A Life</p>
+        <a id="sale" href="shop.html">Click Here</a>
+      </div>
+      
+      <div>
+        <h1>Bozeman Mt Trails</h1>
+      </div>
+
+          <iframe class="icon2" id="content2" frameborder="0" scrolling="no" src="https://www.mtbproject.com/widget/map?12367301&y=5728174&z=6.1&h=700"></iframe>
+      
+  </main>
+    
+    <img src="images/trail-rating-syrtem-small.png" class="rating">
+
+    
+  <footer>
+    <aside>
+      LuckyDuck Design
+    </aside>
+    <p class="footer-bar"> &copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="date"></span></p> 
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/active.js"></script>
+</body>
+</html>

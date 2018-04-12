@@ -1,0 +1,15 @@
+@media only screen and (min-width: 37.5em) {
+header {display: grid; grid-template-columns: 35% 65%;}
+header nav button { display:none;}
+header nav ul.hide { display: flex;}
+header nav ul {justify-content: center; justify-content: flex-start;}
+main h1 {font-size: 3rem;}
+iframe {display: grid;}
+#content { width: 100%; height: 427px;}
+.action, .action2 {max-height: 275px;font-size: 2rem;height: auto;}
+.wrapper {grid-template-columns: 1fr; margin-top: 2rem}
+.nested {grid-template-columns: 1fr 1fr;}
+.nested .icon:nth-child(1),.nested .box:nth-child(1) {grid-column: 1/3;}
+form { grid-template-columns: 1fr 1fr; margin: 1rem}
+form :nth-child(5) {grid-column: 1/3;}
+fieldset{border: #ffe066 solid .5rem; border-radius: 20px;}
